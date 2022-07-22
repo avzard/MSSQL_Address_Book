@@ -1,6 +1,3 @@
-
---Welcome To The Address Book DataBase Problem--
-
 create database AddressBook_serviceDB;
 use AddressBook_serviceDB;
 
@@ -15,4 +12,12 @@ Zip bigint,
 PhoneNumber bigint,
 Email varchar(100)
 );
+select * from AddressBook;
+
+--UC3 insert contact details into table--
+insert into AddressBook(FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email)
+values('Shivaraj','Gowda','DGG','DGG','CG',491445,9689556677,'raj@gmail.com'),
+('Amar','Jeet','Bhilai','Bhilai','CG',490020,9644556677,'amar@gmail.com'),
+('Aviral','Kumar','Raipur','Raipur','CG',492001,9644556677,'avi@gmail.com'),
+('Nikhil','Yadav','Bhilai','Bhilai','CG',490020,9644556677,'nikhil@gmail.com');
 select * from AddressBook;
